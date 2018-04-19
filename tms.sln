@@ -9,9 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{8B64CB63-B0AE-4EC0-875F-1A5DD72A5233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusCommon", "src\BuildingBlocks\EventBus\EventBusCommon\EventBusCommon.csproj", "{6285E70E-21A6-4768-8ABA-81B725536587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusCommon", "src\BuildingBlocks\EventBus\EventBusCommon\EventBusCommon.csproj", "{6285E70E-21A6-4768-8ABA-81B725536587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusRabbitMQ", "src\BuildingBlocks\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{946385D7-EDD1-4FCA-BBE4-1A3F4A2DFDF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusRabbitMQ", "src\BuildingBlocks\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{946385D7-EDD1-4FCA-BBE4-1A3F4A2DFDF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EDB1830F-A5CD-48A4-AE8D-F724585A2680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{96B84211-DDB0-452D-93BA-39DD237728BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +40,7 @@ Global
 		{8B64CB63-B0AE-4EC0-875F-1A5DD72A5233} = {F05C073F-8033-4450-BF0D-0515B6B3B90C}
 		{6285E70E-21A6-4768-8ABA-81B725536587} = {8B64CB63-B0AE-4EC0-875F-1A5DD72A5233}
 		{946385D7-EDD1-4FCA-BBE4-1A3F4A2DFDF0} = {8B64CB63-B0AE-4EC0-875F-1A5DD72A5233}
+		{96B84211-DDB0-452D-93BA-39DD237728BD} = {B79CD252-CEB6-4C9E-9EB8-1152C26AE088}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11717DF9-57AB-4410-8FF0-10F7A4DB4FD0}
