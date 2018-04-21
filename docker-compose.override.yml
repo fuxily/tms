@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  usercenter.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6101:80"
+
+  permission.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6102:80"
+
+
+  location.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6103:80"
+

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zh.Tms.BuildingBlocks.EventBusCommon.EventModels
+namespace Zh.BuildingBlocks.EventBusCommon.EventModels
 {
     public class SubscriptionInfoModel
     {

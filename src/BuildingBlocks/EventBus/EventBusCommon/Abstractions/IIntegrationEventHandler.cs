@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Zh.Tms.BuildingBlocks.EventBusCommon.EventModels;
+using Zh.BuildingBlocks.EventBusCommon.EventModels;
 
-namespace Zh.Tms.BuildingBlocks.EventBusCommon.Abstractions
+namespace Zh.BuildingBlocks.EventBusCommon.Abstractions
 {
 
     /// <summary>

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Zh.Tms.BuildingBlocks.EventBusCommon</RootNamespace>
+    <RootNamespace>Zh.BuildingBlocks.EventBusCommon</RootNamespace>
   </PropertyGroup>
 
 </Project>

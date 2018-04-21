@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Zh.Tms.BuildingBlocks.EventBusCommon.Abstractions;
-using Zh.Tms.BuildingBlocks.EventBusCommon.EventModels;
+using Zh.BuildingBlocks.EventBusCommon.Abstractions;
+using Zh.BuildingBlocks.EventBusCommon.EventModels;
 
-namespace Zh.Tms.BuildingBlocks.EventBusCommon
+namespace Zh.BuildingBlocks.EventBusCommon
 {
     public class EventBusSubscriptionsManager:IEventBusSubscriptionsManager
     {

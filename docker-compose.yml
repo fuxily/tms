@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  usercenter.api:
+    image: usercenterapi
+    build:
+      context: .
+      dockerfile: src/Services/UserCenter/UserCenter.Api/Dockerfile
+
+  permission.api:
+    image: permissionapi
+    build:
+      context: .
+      dockerfile: src/Services/Tms/Permission/Permission.Api/Dockerfile
+
+
+  location.api:
+    image: locationapi
+    build:
+      context: .
+      dockerfile: src/Services/Tms/Location/Location.Api/Dockerfile
+

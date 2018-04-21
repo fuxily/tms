@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Zh.Tms.BuildingBlocks.EventBusCommon.EventModels;
+using Zh.BuildingBlocks.EventBusCommon.EventModels;
 
-namespace Zh.Tms.BuildingBlocks.EventBusCommon.Abstractions
+namespace Zh.BuildingBlocks.EventBusCommon.Abstractions
 {
     public interface IEventBus
     {

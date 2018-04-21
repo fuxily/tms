@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>Zh.Tms.Location.Biz</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\BuildingBlocks\Common\Zh.Common\Zh.Common.csproj" />
+    <ProjectReference Include="..\Location.Dal\Location.Dal.csproj" />
+    <ProjectReference Include="..\Location.DTO\Location.DTO.csproj" />
+    <ProjectReference Include="..\Location.Model\Location.Model.csproj" />
+  </ItemGroup>
+
+</Project>

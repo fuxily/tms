@@ -12,11 +12,11 @@ using System.Collections.Generic;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using Zh.Tms.BuildingBlocks.EventBusCommon;
-using Zh.Tms.BuildingBlocks.EventBusCommon.Abstractions;
-using Zh.Tms.BuildingBlocks.EventBusCommon.EventModels;
+using Zh.BuildingBlocks.EventBusCommon;
+using Zh.BuildingBlocks.EventBusCommon.Abstractions;
+using Zh.BuildingBlocks.EventBusCommon.EventModels;
 
-namespace EventBusRabbitMQ
+namespace Zh.BuildingBlocks.EventBusRabbitMQ
 {
     /// <summary>
     /// RabbitMQ事件总线类，包括了发布消息了订阅消息所有的方法。

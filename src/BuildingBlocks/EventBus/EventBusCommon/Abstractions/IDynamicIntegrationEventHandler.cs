@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zh.Tms.BuildingBlocks.EventBusCommon.Abstractions
+namespace Zh.BuildingBlocks.EventBusCommon.Abstractions
 {
     /// <summary>
     /// 动态集成事件处理器接口。

@@ -3,19 +3,29 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EventBusRabbitMQ
+namespace Zh.BuildingBlocks.EventBusRabbitMQ
 {
-    //RabbitMQ持久化连接接口
+    /// <summary>
+    /// 建立持久化等rabbitmq连接的接口。
+    /// </summary>
     public interface IRabbitMQPersistentConnection
         : IDisposable
     {
-        //是否已经建立连接。
+        /// <summary>
+        /// 是否已经建立连接。
+        /// </summary>
         bool IsConnected { get; }
 
-        //创建创建连接。
+        /// <summary>
+        /// 尝试创建连接。
+        /// </summary>
+        /// <returns></returns>
         bool TryConnect();
 
-        //创建消息通道。
+        /// <summary>
+        /// 创建rabbitmq的model。
+        /// </summary>
+        /// <returns></returns>
         IModel CreateModel();
     }
 }

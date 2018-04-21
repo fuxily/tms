@@ -10,7 +10,7 @@ using System.IO;
 using System.Net.Sockets;
 using System.Text;
 
-namespace EventBusRabbitMQ
+namespace Zh.BuildingBlocks.EventBusRabbitMQ
 {
     public class DefaultRabbitMQPersistentConnection
        : IRabbitMQPersistentConnection
@@ -67,6 +67,10 @@ namespace EventBusRabbitMQ
             }
         }
 
+        /// <summary>
+        /// 尝试建立与rabbitmq服务器连接。
+        /// </summary>
+        /// <returns></returns>
         public bool TryConnect()
         {
             _logger.LogInformation("RabbitMQ Client is trying to connect");
@@ -106,6 +110,11 @@ namespace EventBusRabbitMQ
             }
         }
 
+        /// <summary>
+        /// 当rabbitmq连接被锁定的事件处理函数。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnConnectionBlocked(object sender, ConnectionBlockedEventArgs e)
         {
             if (_disposed) return;
@@ -115,6 +124,11 @@ namespace EventBusRabbitMQ
             TryConnect();
         }
 
+        /// <summary>
+        /// rabbitmq回调发生异常的事件处理函数。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void OnCallbackException(object sender, CallbackExceptionEventArgs e)
         {
             if (_disposed) return;
@@ -124,6 +138,11 @@ namespace EventBusRabbitMQ
             TryConnect();
         }
 
+        /// <summary>
+        /// rabbitmq连接被关闭时的事件处理函数。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="reason"></param>
         void OnConnectionShutdown(object sender, ShutdownEventArgs reason)
         {
             if (_disposed) return;
